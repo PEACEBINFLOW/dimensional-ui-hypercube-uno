@@ -1,0 +1,15 @@
+{
+  "Id": "sample-water-peek",
+  "UserId": "demo-user",
+  "Label": "Water long hold peek",
+  "Samples": [
+    {
+      "X": 200.0,
+      "Y": 180.0,
+      "TimestampMs": 1700000000200,
+      "GestureType": 1,
+      "ShapeMode": 2,
+      "Theme": 1
+    }
+  ]
+}
