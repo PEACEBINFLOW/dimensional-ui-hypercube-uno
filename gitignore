@@ -1,0 +1,32 @@
+# .NET
+bin/
+obj/
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio
+.vs/
+
+# Rider
+.idea/
+
+# Build outputs
+**/Debug/
+**/Release/
+
+# Node
+node_modules/
+npm-debug.log
+yarn.lock
+package-lock.json
+
+# Uno WASM
+dist/
+wwwroot/dist/
+
+# Others
+*.log
+*.tmp
