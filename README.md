@@ -37,7 +37,7 @@ how users move through the interface.
 
 ```bash
 # Clone
-git clone https://github.com/YOUR_USERNAME/dimensional-ui-hypercube-uno
+https://github.com/PEACEBINFLOW/dimensional-ui-hypercube-uno/tree/main
 cd dimensional-ui-hypercube-uno
 
 # Build and run WASM (adjust as needed for your Uno setup)
