@@ -1,0 +1,11 @@
+GEOMETRY MODES (text placeholder)
+
+Cube:
+  - 6 faces
+  - each face is a panel
+
+Sphere:
+  - pages positioned on sphere surface (lat/long)
+
+Water:
+  - tiles floating on a 2D surface
