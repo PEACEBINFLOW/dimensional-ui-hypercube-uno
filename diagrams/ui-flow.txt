@@ -1,0 +1,6 @@
+UI FLOW (text placeholder)
+
+[DimensionalShellPage]
+  -> shows GeometryLayer (Cube/Sphere/Water)
+  -> shows HexMenu overlay when requested
+  -> hosts FaceViews for each cube face (Home, Tasks, Notes, Settings)
