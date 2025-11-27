@@ -1,0 +1,9 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Basic color definitions -->
+    <Color x:Key="DesertBackgroundColor">#FF23180C</Color>
+    <Color x:Key="WaterBackgroundColor">#FF051937</Color>
+    <Color x:Key="NeonBackgroundColor">#FF050510</Color>
+</ResourceDictionary>
