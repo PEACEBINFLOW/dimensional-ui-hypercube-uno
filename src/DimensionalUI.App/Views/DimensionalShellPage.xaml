@@ -1,0 +1,77 @@
+<Page
+    x:Class="DimensionalUI.App.Views.DimensionalShellPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="RootGrid"
+          Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <!-- Background layer for theme-driven visuals -->
+        <Grid x:Name="BackgroundLayer" />
+
+        <!-- Geometry layer: cube/sphere/water visuals -->
+        <Grid x:Name="GeometryLayer"
+              HorizontalAlignment="Center"
+              VerticalAlignment="Center"
+              Width="400"
+              Height="400">
+
+            <Grid x:Name="CubeRoot">
+                <Border x:Name="FrontFace"
+                        Width="220"
+                        Height="220"
+                        CornerRadius="24"
+                        Background="#333333"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center">
+                    <Border.Projection>
+                        <PlaneProjection x:Name="FrontFaceProjection"
+                                         RotationX="0"
+                                         RotationY="0"
+                                         GlobalOffsetZ="0" />
+                    </Border.Projection>
+                    <Frame x:Name="FrontFrame" />
+                </Border>
+
+                <Border x:Name="RightFace"
+                        Width="220"
+                        Height="220"
+                        CornerRadius="24"
+                        Background="#444444"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center">
+                    <Border.Projection>
+                        <PlaneProjection x:Name="RightFaceProjection"
+                                         RotationY="-90"
+                                         GlobalOffsetZ="-110" />
+                    </Border.Projection>
+                    <Frame x:Name="RightFrame" />
+                </Border>
+
+                <Border x:Name="TopFace"
+                        Width="220"
+                        Height="220"
+                        CornerRadius="24"
+                        Background="#555555"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center">
+                    <Border.Projection>
+                        <PlaneProjection x:Name="TopFaceProjection"
+                                         RotationX="90"
+                                         GlobalOffsetZ="-110" />
+                    </Border.Projection>
+                    <Frame x:Name="TopFrame" />
+                </Border>
+            </Grid>
+        </Grid>
+
+        <!-- Overlays -->
+        <Grid x:Name="OverlayLayer">
+            <local:HexMenuControl x:Name="HexMenu"
+                                  Visibility="Collapsed" />
+        </Grid>
+    </Grid>
+</Page>
