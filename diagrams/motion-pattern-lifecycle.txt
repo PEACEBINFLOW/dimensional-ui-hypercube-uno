@@ -1,0 +1,5 @@
+MOTION PATTERN LIFECYCLE (text placeholder)
+
+Input events -> InteractionEngine -> PatternSession -> MotionPattern
+   -> saved via PatternRepository -> JSON in samples/patterns
+   -> replay / analytics / export
