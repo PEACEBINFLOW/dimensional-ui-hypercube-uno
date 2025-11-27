@@ -1,0 +1,13 @@
+<Page
+    x:Class="DimensionalUI.App.Views.Faces.TasksFaceView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Grid>
+        <TextBlock Text="Tasks"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   FontSize="18"
+                   Foreground="White" />
+    </Grid>
+</Page>
